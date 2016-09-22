@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var erty = "Erty:Seidohl:Jan11:CodeCraft";
+		
+		var dave = "Dave:Gray:Sep16:CodeCraft";
+		
+		var instructors = [
+			erty.split(":"),
+			dave.split(":")
+		];
+
+
+		var lastBdayErty = instructors[0].slice(1,3);
+		var ertyFinal = lastBdayErty.join("-");
+		console.log(ertyFinal);
+
+		var lastBdayDave = instructors[1].slice(1,3);
+		var daveFinal = lastBdayDave.join("-");
+		console.log(daveFinal);
+
+		// The easy way to do it!!
+		// console.log(instructors[0][1] + " - " + instructors[0][2]);
+		// console.log(instructors[1][1] + " - " + instructors[1][2]);
+
+		// how to put it in a loop 
+		// var i = 0;
+
+		// while (i < instructors.length) {
+		// 	console.log(instructors[i][1] + " - " + instructors[i][2]);
+		// 	i++;
+		// }
+		//TODO: console.log Erty and Dave's last name and birthday with a dash: "Name - Birthday"
+
+	</script>
+</body>
+</html>

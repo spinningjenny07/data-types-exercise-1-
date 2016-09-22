@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		* Exercise Two
+		* Why does the following output true?
+		*/
+
+		var a = "false";
+		var b = true;
+
+		// "&&" is "and"
+		console.log (a && b);
+
+		console.log (b && a);
+
+		/*
+		* Bonus Question: Why does (b && a) log "false"?
+		*/
+		// a && b outputs at true because it checks the value of "a" which is a string and evaluates to true and then checks b which is boolean true so they're both true.
+
+		//b && a outputs as false b/c it's short circuiting. Since it's an AND statement it returns the last truthy value which is the string "false".
+	</script>
+</body>
+</html>
